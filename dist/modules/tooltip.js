@@ -1,6 +1,6 @@
 /**
  * angular-strap
- * @version v2.2.4 - 2015-05-28
+ * @version v2.2.4 - 2015-06-15
  * @link http://mgcrea.github.io/angular-strap
  * @author Olivier Louvignes <olivier@mg-crea.com> (https://github.com/mgcrea)
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -409,11 +409,11 @@ angular.module('mgcrea.ngStrap.tooltip', [ 'mgcrea.ngStrap.helpers.dimensions' ]
         if (split[0] === 'top' || split[0] === 'bottom') {
           switch (split[1]) {
            case 'left':
-            offset.left = position.left;
+            offset.left = position.left - 11;
             break;
 
            case 'right':
-            offset.left = position.left + position.width - actualWidth;
+            offset.left = position.left + position.width - actualWidth + 11;
           }
         } else if (split[0] === 'left' || split[0] === 'right') {
           switch (split[1]) {

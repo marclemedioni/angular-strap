@@ -559,10 +559,10 @@ angular.module('mgcrea.ngStrap.tooltip', ['mgcrea.ngStrap.helpers.dimensions'])
           if(split[0] === 'top' || split[0] === 'bottom') {
             switch (split[1]) {
             case 'left':
-              offset.left = position.left;
+              offset.left = position.left - 11;
               break;
             case 'right':
-              offset.left =  position.left + position.width - actualWidth;
+              offset.left =  position.left + position.width - actualWidth + 11;
             }
           } else if(split[0] === 'left' || split[0] === 'right') {
             switch (split[1]) {
